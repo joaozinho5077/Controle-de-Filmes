@@ -7,3 +7,12 @@ D:\Atividade_Controle-de-Filmes\Controle-de-Filmes\Controle-de-Filmes\obj\x86\De
 D:\Atividade_Controle-de-Filmes\Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Atividade_Controle-de-Filmes\Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle-de-Filmes.exe
 D:\Atividade_Controle-de-Filmes\Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle-de-Filmes.pdb
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle-de-Filmes.exe
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle-de-Filmes.pdb
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\bin\Debug\Controle-de-Filmes.exe
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\bin\Debug\Controle-de-Filmes.pdb
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle_de_Filmes.Form1.resources
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\Controle_de_Filmes.Properties.Resources.resources
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\NovaInterface_Controle-de-Filmes\Controle-de-Filmes\obj\x86\Debug\GenerateResource.write.1.tlog

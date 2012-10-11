@@ -29,15 +29,6 @@ namespace Controle_de_Filmes
         {
 
         }
-        private void botao_Adicionar_Click(object sender, EventArgs e)
-        {
-            Cadastrar();
-        }
-        private void buttonRemover_Click(object sender, EventArgs e)
-        {
-            // Remover item selecionadodo do ListView 
-            Deletar();
-        }
         private void listView1_KeyDown(object sender, KeyEventArgs e)
         {
             //Remover item selecionados pela tecla Delete 
@@ -46,12 +37,6 @@ namespace Controle_de_Filmes
                 Deletar();
             }        
         }
-        
-        private void buttonEditar_Click(object sender, EventArgs e)
-        {
-            Editar_Filme();
-        }
-
         private void buttonGravar_Click(object sender, EventArgs e)
         {
             Gravar_Edicao();
@@ -212,5 +197,51 @@ namespace Controle_de_Filmes
                 }
         }
         #endregion
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botao_Adicionar_Click_1(object sender, EventArgs e)
+        {
+            Cadastrar();
+        }
+
+        private void buttonEditar_Click_1(object sender, EventArgs e)
+        {
+            Editar_Filme();
+        }
+
+        private void buttonRemover_Click_1(object sender, EventArgs e)
+        {
+            Deletar();
+        }
+
+        private void buttonGravar_Click_1(object sender, EventArgs e)
+        {
+            Gravar_Edicao();
+        }
+        
+        private void Form1_Enter(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                ((TextBox)sender).BackColor = Color.FromName("Window");
+            }
+        }
+
+        private void Form1_Leave(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                ((TextBox)sender).BackColor = Color.FromName("Info");
+            }
+        }
     }
 }
