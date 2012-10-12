@@ -48,7 +48,7 @@ namespace Controle_de_Filmes
         #region "Função Cadastrar"
         private void Cadastrar()
         {
-            if (textBoxNome.Text != "" && comboBoxGenero.Text != null && textBoxLocal.Text != "")
+            if (textBoxNome.Text != "" && comboBoxGenero.Text != null && comboBoxGenero.Text != "" && textBoxLocal.Text != "")
             {
                 //Adiciona Itens no ListView
                 ListViewItem FilmeAssistido = new ListViewItem();
@@ -84,6 +84,18 @@ namespace Controle_de_Filmes
             }
             else
                 MessageBox.Show("Preencha todos os campos", "Aviso!!!",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textBoxNome.Focus();
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if ((item.Index % 2) == 0)
+                {
+                    item.BackColor = Color.LightGray;
+                }
+                else 
+                {
+                    item.BackColor = Color.OldLace;
+                }
+            }
         }
         #endregion
         #region "Função Deletar"
@@ -230,18 +242,39 @@ namespace Controle_de_Filmes
         
         private void Form1_Enter(object sender, EventArgs e)
         {
+            //if (sender is TextBox)
+            //{
+            //    ((TextBox)sender).BackColor = Color.FromName("Info");
+            //}
+            foreach (Object obj in this.Controls)
+            {
+                String cTipo = obj.ToString();
+                if (cTipo.StartsWith("System.Windows.Forms.TextBox"))
+                {
+                    TextBox oTBAux = (TextBox)obj;
+                    oTBAux.BackColor = Color.White;
+                }
+                TextBox oTB = (TextBox)sender;
+                oTB.BackColor = Color.Red;
+            }
+        }
+
+        private void Form1_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBoxNome_Leave(object sender, EventArgs e)
+        {
             if (sender is TextBox)
             {
                 ((TextBox)sender).BackColor = Color.FromName("Window");
             }
         }
 
-        private void Form1_Leave(object sender, EventArgs e)
+        private void textBoxNome_SystemColorsChanged(object sender, EventArgs e)
         {
-            if (sender is TextBox)
-            {
-                ((TextBox)sender).BackColor = Color.FromName("Info");
-            }
+
         }
     }
 }
